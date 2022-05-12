@@ -1,0 +1,21 @@
+package com.chainsys.usingFinal;
+
+public class ShapePrivateConstructor 
+{
+
+	public int height;
+	public int width;
+	private ShapePrivateConstructor()
+	{
+		System.out.println("Shape CreatedA"+hashCode());
+	}
+	private ShapePrivateConstructor(int a)
+	{
+		height=a;width=a;
+		System.out.println("Shape CreatedB"+hashCode());
+	}
+	public static ShapePrivateConstructor getObject(); // factory Method
+	{
+		return new ShapePrivateConstructor(); //call to private constructor
+	}
+}

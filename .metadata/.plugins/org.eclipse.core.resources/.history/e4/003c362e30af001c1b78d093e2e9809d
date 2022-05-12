@@ -1,0 +1,22 @@
+package com.chainsys.introduction;
+/**
+ * 
+ * @author goku3159
+ *
+ */
+public class Eight {
+
+	public static void main(String[] args) {
+		String name="gokul";
+		System.out.println("The name is :" + name);
+		
+		for(int i=0;i<=name.length();i++)
+		{
+			System.out.println(i);
+		}
+
+	}
+
+	
+}
+
