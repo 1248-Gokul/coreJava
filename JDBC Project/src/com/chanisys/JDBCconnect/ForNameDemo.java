@@ -7,7 +7,7 @@ public class ForNameDemo {
 		hero.Name="VJS";
 		hero.city="Theni";
 		String classname ="JDBCconnect";
-		Class firstclass=class.ForName();
+		Class firstclass=Class.forName(classname);
 
 	}
 

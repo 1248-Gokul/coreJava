@@ -10,7 +10,8 @@ import java.sql.*;
 	          
 	        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));  
 	          
-	        do{  
+	        do
+	        {  
 	        System.out.println("Enter Emp_id:");  
 	        int id=Integer.parseInt(br.readLine());  
 //	        System.out.println("Enter Emp_Name:");  
