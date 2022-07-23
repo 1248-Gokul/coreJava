@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+/* Class Selectors  */
+.centered {
+	text-align: center;
+}
+
+.largefont {
+	font-size: large;
+	background-color: black;
+	color: white;
+}
+.mediumfont {
+	font-size: medium;
+	background-color: gray;
+	color: blue;
+}
+
+.smallfont {
+	font-size: small;
+	background-color:black;
+	color:white;
+}
+
+.reddiv {
+	color: red;
+}
+
+ /*  name selector(type Selector) */
+div > p {
+	color: brown;
+	font-size: medium;
+}
+/* id selector  */
+#div1 {
+	color: green;
+	font-size: large;
+	text-align: left;
+} 
+/*pseudo selector  */
+div:first-child{
+	color: blue;
+	font-size: medium;
+}
+div:Last-child{
+	color: cyan;
+	font-size: medium;
+}
+div:nth-child(even){
+	color: brown;
+	font-size: medium;
+}
+div:nth-child(odd){
+	color: orange;
+	font-size: medium;
+}
+div:nth-child(2n+1){
+	color: cyan;
+	font-size: medium;
+}
+/* type selectors and pseudo selctors for a link */
+a {
+	color: lime;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+}
+/* #chennai {
+	color: brown;
+}
+#Madurai {
+	color: blue;
+}
+#Theni {
+	color: cyan;
+} */
+/* a[href="http://www.Chennai.nic.in"] {
+	color :gray;
+}
+a[href="http://www.Madurai.nic.in"] {
+	color :orchid;
+}
+a[href="http://www.Theni.nic.in"] {
+	color :silver;
+} */
+input[id="fname"]{
+	color: maroon;
+	background-color: silver;
+}
+a[href*="chennai.nic"] {
+	color :gray;
+}
+a[href*="madurai.nic"] {
+	color :orchid;
+}
+a[href*="theni.nic"] {
+	color :silver;
+}

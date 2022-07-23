@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>customer details</title>
+</head>
+<body>
+	<form>
+		<div>
+			<label for='username'>User Name : <input name='username'
+				placeholder='enter your name' title='login user name' required
+				minlength=5 maxlength=10 size=10>
+			</label>
+		</div>
+		<div>
+			<label for='passward'>Password : <input name='passward'
+				placeholder='enter your passward'
+				title='passwrd must begin with a letter and contain atleast ne digit and must have atleast 8 characters'
+				required minlength=8 maxlength=16 size=16
+				pattern="[A-Za-z]*[0-9]*[a-zA-Z]*">
+			</label>
+		</div>
+		<div>
+			<label for='email'>Email : <input name='email' type='email'
+				title='enter your email' pattern=".+@chainsys\.com">
+		</div>
+		<div>
+			<label for='photo'>Photo: <input name='photo'
+				placeholder='file' type='file' accept='audio/*,video/*,image/*'>
+		</div>
+		<div>
+			<label> DOB</label> <input name='date'
+				title="enter your date of birth" id="date" type="date" /> <input
+				name='datetime-local' title="enter date and time"
+				id="datetime-local" type="datetime-local" /> <input name='time'
+				title="enter time here" id="time" type="time" /> <input name='week'
+				title="enter the week of the year" id="week" type="week" /> <input
+				name='color' title="status" id="color" type="color" value='#e66465' />
+		</div>
+		<div>
+			<input title='select a book' name='book' id='r1' checked
+				type='radio' value='fiction' /> <label for='r1'> Fiction </label>
+		</div>
+		<div>
+			<input title='select a book' name='book' id='r2' checked
+				type='radio' value='drama' /> <label for='r1'> Drama</label>
+		</div>
+		<div>
+			<input title='select a book' name='book' id='r3' checked
+				type='radio' value='family' /> <label for='r1'> Family </label>
+		</div>
+		<div>
+			<input type='submit'>
+		</div>
+
+	</form>
+</body>
+</html>

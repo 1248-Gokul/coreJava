@@ -1,8 +1,8 @@
 package com.chainsys.Interfaces;
-public static void testA() {
+public class Cal{
 	public static void testMarker()
     {
-        ICalculatorB firstCalculator=new ICalculatorB();
+        CalculatorB firstCalculator=new CalculatorB();
         if(firstCalculator instanceof ICalculator)
         {
             ICalculator contract=firstCalculator;

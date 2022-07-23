@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+</head>
+<body>
+<form>
+	<div>
+		<div>
+			<label for='year'> Year's Of Experience: <input name='year'
+				id='year' type='number' step='0.05' maxlength=3 min=5 value=35
+				required>
+			</label>
+		</div>
+		<div>
+			<label for='year'> Age Range: <input name='age' id='age'
+				type='range' step=1 min=22 max=30 value=35 required>
+			</label>
+		</div>
+		<div>
+			<label for='phone'> Phone Number: <input name='phone'
+				id='phone' type='tel' required pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+				placeholder='123-456-789'>
+			</label>
+		</div>
+		<div>
+			<input name='course' id='course' type="checkbox" checked=true
+				required value='computer science'> <input name='course'
+				id='course' type="checkbox" required value='Tamil'> <input
+				name='course' id='course' type="checkbox" required value='English'>
+		</div>
+		<div>
+			<label for='secret'> Hidden Content : <input type='hidden'
+					name='secret' value='passwordA'></label>
+		</div>
+		<div>
+			<label for='url'> URL : <input type='url'
+					name='url' value='www.google.com'></label>
+		</div>
+		<div>
+		<label for='ListOffruits'>
+		<select name='Listoffruits' title='select a fruits'>
+		<option selected>Select Fruits</option>
+		<option>Apple</option>
+		<option>Orange</option>
+		<option>WaterMelone</option>
+		<option>Banana</option>
+		<optgroup label="Banana">
+		<option>Red Banana</option>
+		<option>Yellow Banana</option>
+		<option>Green Banana</option>
+		</optgroup>
+		</select>
+		</label>
+	</div>
+	<div>
+	<label for='comments'>
+	<textarea name='comments' cols=50 rows=5></textarea>
+	</label>
+	</div>
+	<div>
+	<input type='submit' value='click me!'>
+	<input type='reset' value='reset'>
+	<input type='image' alt='close' name='close' src='../images/close.jpg' width=35 height=40>
+	</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Select</title>
+<style>
+.green {
+	background-color: green
+}
+
+.yellow {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<div id="div1">
+		<ol></ol>
+		<li>Gokul</li>
+		</ol>
+		<ul>
+			<li>Kohli</li>
+			<li>Dhoni</li>
+			<li class="green">Sachin</li>
+			<li>Ganguly</li>
+		</ul>
+	</div>
+	<div id="div2">Hello Selectors</div>
+	<input type="text" id="fname" placeholder="enter first name" onchange="myfunction()">
+	<!-- <script>
+		// query selected returns the first Elements (returens only one element)
+		var element1 = document.querySelector("li");
+		console.log(element1);
+		// querySelectorAll return all li elements
+		var element2 = document.querySelectorAll("li");
+		console.log(element2);
+		var element3 = document.querySelector("ol > li");
+		console.log(element3);
+		var element4 = document.querySelector("div");// ByTagName
+		console.log(element4);
+		var element5 = document.querySelectorAll("div");
+		console.dir(element5);
+		var element6 = document.querySelectorAll("#div2");// ById
+		console.dir(element6);
+		element6.style.color="purple";
+		var element7 = document.querySelectorAll(".green");// ByCss Class
+		console.dir(element7);
+	</script> -->
+	<script>
+		const arr = [ 1, 2, 3, 4, 5, 6 ];
+		console.log(arr);
+		// JSON to STRING
+		const strArr = JSON.stringify(arr);
+		console.log(strArr);
+		const myObj = {
+			firstname : 'Venkat',
+			lastlast : 'krishnan'
+		};
+		const strjson = JSON.stringify(myObj);
+		console.log(strjson);
+		//json parse; String to JSON
+		const arr1 = JSON.parse(strjson);
+		console.log(arr1);
+		var javastudentlist = {
+			"sudentlist" : [ {
+				"name" : "Ajith",
+				"age" : "22"
+			}, {
+				"name" : "Vijay",
+				"age" : "22"
+			}, {
+				"name" : "Tom",
+				"age" : "22"
+			} ],
+			"Facltylist" : [ {
+				"name" : "PriyankaMohan",
+				"age" : "30"
+			}, {
+				"name" : "Samantha",
+				"age" : "34"
+			}, {
+				"name" : "Kashmira",
+				"age" : "22"
+			} ]
+		};
+		console.log(javastudentlist);
+		function myfunction() {
+			var textElement = document.getElementById("fname");
+			console.log("text change " + textElement.value);
+		}
+	</script>
+</body>
+</html>

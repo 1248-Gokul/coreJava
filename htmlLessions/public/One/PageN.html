@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM_A</title>
+<style>
+.green {
+	background-color: green
+}
+
+.yellow {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<div id="div1" class="green">Hello JavaScript</div>
+	<div>
+		<h1>fruits</h1>
+		<ul>
+			<liclass "yellow">Apple</li>
+			<li>Orange</li>
+			<li class "green">mango</li>
+</ul>
+		</head>
+		<body>
+			<div id="div1" class="green">Hello JavaScript</div>
+			<div>
+				</head>
+				<body>
+					<div id="div1"></div>
+					<div>
+						<h1>Fruits</h1>
+						<ul>
+							<li>Apple</li>
+							<li>Mango</li>
+							<li>Orange</li>
+							<li>Grapes</li>
+						</ul>
+						<img src="images/tiger.jpg" alt="tiger" width=300 height=200>
+						<div id="div2" class="yellow">
+							<input type="text" name="fname" id="fname" value="Gokul"
+								placeholder="first name">
+						</div>
+					</div>
+					<!-- <script>
+		console.log("Hello World")
+		console.dir(document);
+		console.log(document.URL);
+		console.dir(document.children[0]); // html
+		console.dir(document.children[0].children[1]); // body
+		console.dir(document.children[0].children[1].childNodes);
+	</script> -->
+					<!-- <script>
+    var x = 234;
+    console.log(x);
+    var cities={'capital':'chennai','native':'Arni','permanent':'ussor','favorite':'paris'}
+    console.log(cities);
+    </script> -->
+					<script>
+						var divElement = document.getElementById("div1");
+						//divElement.innerHTML="Hello June 2022";
+						divElement.innerText = "Hello June 2022";
+						var textElement = document.getElementById("fname");
+						console.log(textElement.value);
+						var listItems = document.getElementsByTagName("li");
+						var itemLength = listItems.length;
+						for (var i = 0; i < itemLength; i++) {
+							console.log(listItems[i].innerText);
+						}
+					</script>
+				</body>
+</html>
